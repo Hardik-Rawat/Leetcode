@@ -1,7 +1,6 @@
 # Write your MySQL query statement below
 SELECT
-    e.name,
-    b.bonus
+    e.name, b.bonus
 FROM 
     Employee e
 LEFT JOIN
