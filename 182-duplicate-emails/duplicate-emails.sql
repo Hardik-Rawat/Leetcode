@@ -1,7 +1,9 @@
 # Write your MySQL query statement below
-SELECT
+SELECT 
     email
-FROM Person
+FROM 
+    Person
 GROUP BY 
     email
-HAVING COUNT(DISTINCT id) > 1
+HAVING 
+    COUNT(DISTINCT id) > 1
