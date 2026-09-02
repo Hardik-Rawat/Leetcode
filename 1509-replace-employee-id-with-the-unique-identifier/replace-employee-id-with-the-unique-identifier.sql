@@ -1,7 +1,6 @@
 # Write your MySQL query statement below
 SELECT
-    e1.unique_id,
-    e.name
+    e1.unique_id,e.name
 FROM 
     Employees e
 LEFT JOIN
