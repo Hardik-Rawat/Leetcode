@@ -5,7 +5,7 @@ SELECT
     s.price
 FROM
     Sales AS s
-INNER JOIN
+LEFT JOIN
     Product AS p
 ON
     s.product_id = p.product_id
