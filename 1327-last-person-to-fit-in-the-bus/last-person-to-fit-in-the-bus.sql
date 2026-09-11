@@ -2,7 +2,10 @@
 WITH cte AS
 (SELECT
     person_name,
-    SUM(weight) OVER(ORDER BY turn ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS sum_weight
+    SUM(weight) OVER(ORDER BY turn ROWS BETWEEN 
+    UNBOUNDED PRECEDING AND CURRENT ROW) 
+AS 
+    sum_weight
 FROM
     Queue)
 SELECT
