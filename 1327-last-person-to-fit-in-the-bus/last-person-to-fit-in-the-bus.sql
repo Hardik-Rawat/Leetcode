@@ -5,7 +5,6 @@ WITH cte AS
     SUM(weight) OVER(ORDER BY turn) AS sum_weight
 FROM
     Queue)
-
 SELECT
     person_name
 FROM 
@@ -14,5 +13,6 @@ WHERE
     sum_weight<=1000
 ORDER BY
     sum_weight DESC
-LIMIT 1
+LIMIT 
+    1
 
