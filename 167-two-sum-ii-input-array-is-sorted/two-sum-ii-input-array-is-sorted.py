@@ -1,8 +1,8 @@
 class Solution(object):
     def twoSum(self, numbers, target):
-        l, r= 0, len(numbers)-1
+        l,r= 0,len(numbers)-1
         while l<r:
-            currSum = numbers[l] + numbers[r]
+            currSum=numbers[l] + numbers[r]
             if currSum < target:
                 l += 1
             elif currSum > target:
